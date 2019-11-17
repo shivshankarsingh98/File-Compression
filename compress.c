@@ -4,36 +4,7 @@
 #include<string.h>
 #include <termios.h>
 #include <unistd.h>
-// int getch() {
-//     struct termios oldt, newt;
-//     int ch;
-//     tcgetattr(STDIN_FILENO, &oldt);
-//     newt = oldt;
-//     newt.c_lflag &= ~(ICANON | ECHO);
-//     tcsetattr(STDIN_FILENO, TCSANOW, &newt);
-//     ch = getchar();
-//     tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
-//     return ch;
-// }
-// char *getPassword()
-// {
-// 	 char ch;
-// 	 printf("Enter Password\n");
-// 	 int i;
-// 	 printf("Enter the password : ");
 
-// 	 for(i=0;i<30;i++)
-// 	 {
-// 	  ch = getch();
-// 	  pasword[i] = ch;
-// 	  ch = '*' ;
-// 	  printf("%c",ch);
-//  	}
-
-//  pasword[i] = '\0';
-//  return password;
-
-// }
 struct haffmanNode
 {
 	char character;
